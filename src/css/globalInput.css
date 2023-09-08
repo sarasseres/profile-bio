@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@200;300;400;500&family=Open+Sans:wght@300;400&family=Poppins:wght@100;300;400;700&family=Roboto+Condensed:wght@300&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-rose-200 dark:bg-slate-800;
+  }
+
+  h1 {
+    @apply text-4xl font-bold text-blue;
+  }
+  h2 {
+    @apply text-3xl font-bold;
+  }
+  h3 {
+    @apply text-2xl font-bold text-blue;
+  }
+  p {
+    @apply font-sans font-normal text-blue;
+  }
+  input {
+    @apply bg-transparent py-2 border-b-[1px] focus:outline-none;
+  }
+  border {
+    @apply shadow-sm;
+  }
+}
+
+@layer components {
+  .card {
+    @apply bg-white p-8 hover:scale-105 transition duration-300 ease-in-out rounded-3xl shadow-sm dark:shadow-sm dark:bg-slate-400;
+  }
+  .card-m {
+    @apply bg-blue  p-8 hover:scale-105 transition duration-300 ease-in-out rounded-3xl shadow-sm shadow-white;
+  }
+
+  #toggle:checked ~ label div.toggle-circle {
+    @apply translate-x-3;
+  }
+}

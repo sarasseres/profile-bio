@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="src/css/global.css" rel="stylesheet" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div class="flex flex-col justify-between h-screen">
+      <!-- header -->
+      <header class="flex justify-between p-8">
+        <div class="text-2xl font-bold tracking-tight text-blue dark:text-slate-200">Saras.</div>
+        <div class="flex gap-8 rounded-full px-6 py-1 font-medium shadow-md invisible lg:visible">
+          <div class="text-blue text-lg dark:text-slate-200">About</div>
+          <div class="text-blue text-lg dark:text-slate-200">Draft</div>
+          <div class="text-blue text-lg dark:text-slate-200">Draft</div>
+          <div class="text-blue text-lg dark:text-slate-200">Media</div>
+        </div>
+        <div class="bg-blue flex items-center border-[1px] w-fit rounded-full px-3 py-1 font-medium text-white">Contact</div>
+      </header>
+      <!-- header end -->
+      <!-- dark mode -->
+      <div class="flex justify-center p-8">
+        <span class="text-sm dark:text-slate-200 mr-2 text-blue font-bold">Light</span>
+        <input type="checkbox" id="toggle" class="hidden" />
+        <label for="toggle">
+          <div class="w-9 h-5 bg-blue rounded-full flex items-center p-1 cursor-pointer">
+            <div class="w-4 h-4 rounded-full bg-white toggle-circle"></div>
+          </div>
+        </label>
+        <span class="text-sm dark:text-slate-200 ml-2 text-blue font-bold">Dark</span>
+      </div>
+      <!-- main -->
+      <main class="max-w-3xl m-auto grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <!-- main card -->
+        <div class="card col-span-2 relative">
+          <div class="absolute top-4 right-4 flex gap-2 items-center animate-pulse bg-emerald-100 border-[1px] w-fit rounded-full px-3 py-1 text-xs">
+            <div class="w-2 h-2 bg-emerald-400 rounded-full"></div>
+            <div>Available for Collaboration</div>
+          </div>
+          <img src="public/srs.jpg" class="h-16 w-16 rounded-full" />
+          <div class="font-sans text-blue">Dewi Saraswati</div>
+          <div class="text-xs font-sans text-blue">Frontend Developer</div>
+          <div class="flex gap-1 items-baseline">
+            <h1 id="heading"></h1>
+          </div>
+        </div>
+        <!-- main card end  -->
+        <!-- twitter card -->
+        <div class="card bg-white dark:bg-purple-200 flex justify-center items-center">
+          <img src="public/watsapp.svg" class="w-[80px] h-[80px]" />
+        </div>
+        <!-- twitter card end -->
+        <!-- portofolio -->
+        <div class="card bg-purple-400 dark:bg-purple-200 flex justify-center items-center relative">
+          <div class="bg-white rounded-full p-2 bottom-2 left-2 absolute">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
+            </svg>
+          </div>
+          <div class="font-semibold text-base font-openSans text-blue">Designstripe Mockups</div>
+        </div>
+        <!-- form -->
+        <div class="card col-span-2">
+          <h3>Collaboration?</h3>
+          <p>I have a strong track record of developing impactful products. Let's work together!</p>
+          <input id="form" />
+        </div>
+      </main>
+      <!-- main end -->
+
+      <!-- card kecil -->
+      <section class="container max-w-4xl m-auto grid grid-cols-1 lg:grid-cols-3 gap-8 lg:border-t-[3px] border-white p-10 my-6">
+        <!-- biografi card -->
+        <div class="card-m relative">
+          <div class="absolute top-2 right-2">
+            <img src="public/icons/lamp.png" class="w-20 h-20" />
+          </div>
+          <div class="">
+            <h3 class="font-bold text-white">Biografi</h3>
+            <p class="text-white">I’m a Technology enthusiast</p>
+            <p class="text-white">Love Learning new Things</p>
+            <p class="text-white">and can Work Underpressure</p>
+            <p class="text-white">Hardworking Person</p>
+          </div>
+        </div>
+        <!-- Tools card -->
+        <div class="card-m relative">
+          <div class="absolute top-4 right-4">
+            <img src="public/icons/paper.png" class="w-16 h-16" />
+          </div>
+          <div class="">
+            <h3 class="text-white">Tools</h3>
+            <p class="text-white">React</p>
+            <p class="text-white">Postman</p>
+            <p class="text-white">Javascript</p>
+            <p class="text-white">Next Js</p>
+            <p class="text-white">Tailwind</p>
+          </div>
+        </div>
+        <!-- Skill Card -->
+        <div class="card-m relative flex">
+          <div class="absolute top-2 right-2">
+            <img src="public/icons/handphone.png" class="w-24 h-24" />
+          </div>
+          <div class="">
+            <h3 class="text-white">Skill</h3>
+            <p class="text-white">Problem Solving</p>
+            <p class="text-white">Web Designer</p>
+            <p class="text-white">Time Management</p>
+            <p class="text-white">Logical Thinking</p>
+          </div>
+        </div>
+      </section>
+
+      <footer class="text-center p-8">
+        <p>Build with Love.</p>
+      </footer>
+    </div>
+
+    <script src="src/js/main.js" type="module"></script>
+  </body>
+</html>
